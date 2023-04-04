@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat API</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/main.js" type="module" defer></script>
+</head>
+<body>
+
+    <div class="header"> 
+        <div class="container">
+            <header>
+                <h1>Cats!</h1>
+            </header>
+        </div>
+    </div>
+
+    <div class="category-select">
+        <div class="container">
+            <label for="category">Choose a CATegory:</label>
+            <select name="category" id="category">
+            <!-- insert categories here -->
+            </select>
+        </div>
+    </div>
+
+    <div class="card-section container">
+        <h2>A Distinguished Collection of Feline Fotos</h2>
+        <p class="choose active"><span class="material-symbols-outlined">
+            pets
+            </span>Please choose a category above to see some purr-fect pictures!<span class="material-symbols-outlined">
+                pets
+                </span></p>
+        <div class="error-message"></div>
+        <div class="loader-circle-wrap">
+            <svg
+                class="loader-spinner"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 72 72"
+            >
+                <circle cx="36" cy="36" r="32" stroke-miterlimit="10" />
+            </svg>
+        </div>
+        <div class="content">
+            <ul class="grid card-group" id="cat-cards">
+            <!-- insert cat cards here -->
+            </ul>
+        </div>
+    </div>
+        
+    
+    
+    
+
+</body>
+</html>
